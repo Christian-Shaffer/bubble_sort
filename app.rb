@@ -4,7 +4,6 @@ def bubble_sort(array)
   (array.length - 1).times do
     swapped = false
     array.each_index do |index|
-      # Prevent checking of nil indexes
       if index < array.length - 1 && array[index] > array[index + 1]
         temp_value = array[index]
         array[index] = array[index + 1]
